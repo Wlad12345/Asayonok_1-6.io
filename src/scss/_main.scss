@@ -1,0 +1,165 @@
+.main{
+  background-color: #F8F8F8;
+  &__title{
+    position: relative;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: left;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+
+  &__title::before{
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 13px;
+    width: 4px;
+    height: 40px;
+    background-color: #41F6D7;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  &__nav{
+    padding-top: 24px;
+  }
+  &__text{
+    font-size: 14px;
+  }
+  &__text--paragraf{
+    padding: 16px;
+  }
+  &__image{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.nav{
+  &__items{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+  &__item{
+    padding: 6px 16px;
+    border: 2px solid transparent;
+}
+  &__item:hover{
+    border: 2px solid #B8FFEC;
+    background-color: white;
+    border-radius: 6px;
+}
+  &__link{
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    color: #7E7E82;
+    white-space: nowrap;
+}
+}
+.nav::after{
+  content: '';
+  background: linear-gradient(
+    270deg,
+    #f8f8f8 16.84%,
+    rgba(248, 248, 248, 0.0001) 100%
+  );
+  width: 30px;
+  height: 35px;
+  position: absolute;
+  top: 150px;
+  right: 0px;
+  z-index: 2;
+}
+
+.text{
+  &__paragraf{
+    height:auto;
+    overflow: hidden;
+
+  }
+  &__paragraf--hidden{
+    height: 90px;
+    transition: 1s linear;
+    transform: translate3d(0, 0, 0);
+  }
+
+
+  &__button{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 7px;
+    padding: 5px;
+  }
+
+  &__button::before{
+    content: '«';
+    color: #41F6D7;
+    font-size: 24px;
+    transform: rotate(-90deg);
+  }
+
+  &__button--hidden::before{
+    transform: rotate(90deg);
+    
+  }
+}
+.paragraf--hidden{
+  height: 370px;
+}
+
+@media screen and (min-width: 768px){
+  .main{
+  &__text{
+    display: flex;
+    gap: 48px;
+    padding-right: 24px;
+  }
+  &__text--paragraf{
+    flex: 1 1 50%;
+  }
+
+  &__image--wrapper{
+    flex: 1 1 50%;
+  }
+
+}
+  .text__paragraf--hidden{
+    height: 180px;
+  }
+  .paragraf--hidden{
+    height: 310px;
+  }
+}
+@media screen and (min-width: 1440px){
+  .main{
+    padding-left: 8px;
+    &__title{
+      width: 300px;
+      padding-top: 32px;
+      z-index: 2;
+    }
+    &__title::before{
+      top: 28px;
+      left: -8px;
+    }
+    &__image--wrapper{
+    padding-right: 24px;
+    }
+  }
+  .nav__items{
+      flex-wrap: wrap;
+      overflow-x: auto;
+  }
+  .text__paragraf--hidden{
+    height: 130px;
+  }
+  .paragraf--hidden{
+    height: 230px;
+  }
+}

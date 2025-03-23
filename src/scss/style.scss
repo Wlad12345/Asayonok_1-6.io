@@ -1,0 +1,25 @@
+.container{
+  font-family: 'TT Lakes', sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  .container{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+@import 'fonts';
+@import 'header';
+@import 'normalize';
+@import 'brgmenu';
+@import 'main';
+@import 'overlay';
+@import 'service';
+@import 'swiper';
+@import 'device';
+@import 'prices';
+@import 'footer';
+@import 'callmodal';
+@import 'feedbackmodal';
