@@ -7,8 +7,10 @@
     <title>Document</title>
 <link href="style.css" rel="stylesheet"></head>
 <body>
+  <div class="container">
   <div class="overlay"></div>
   <div class="overlay__brg"></div>
+  <div class="box">
   <header class="header">
     <div class="header__menu">
       <button class="header__btn btn__burger" type="button"></button>
@@ -32,78 +34,8 @@
       <button class="header__btn btn__repair btn--label" type="button"><span class="label">Оставить заявку</span></button>
       <button class="header__btn btn__checkstatus btn--label" type="button"><span class="label">Статус ремонта</span></button>         
     </div>
-  </header>  
-  <aside class="brg__menu brg__menu--hidden">
-    <div class="brg__menu--header">         
-        <button href="#" class="brg__btn btn__close"></button>                
-        <a href="#" class="brg__logo">
-          <img class="brg__logo--image" src="img/Group.svg" alt="CPS Logo" width="97" height="50">
-        </a>
-        <button href="#" class="brg__btn btn__search"></button>
-      </div>
-    <nav class="brg__menu--nav">
-            <ul class="brg__menu--items">
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Ремонт техники</a>
-                </li>
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Услуги и сервисы</a>
-                </li>
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Корпаративным клиентам</a>
-                </li>
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Продавцам техники</a>
-                </li>
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Партнерам</a>
-                </li>
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Производителям</a>
-                </li>
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Наши сервисные центры</a>
-                </li>
-                <li class="brg__menu--item">
-                    <a href="#" class="brg__menu--link">Контакты</a>
-                </li>
-            </ul>
-    </nav>
-    <footer class="brg__menu--footer">
-      <nav class="footer__nav menu__nav">
-        <ul class="menu__items">
-          <li>
-            <button class="header__btn btn__call brg__btn--call" type="button"></button>
-          </li>
-          <li>
-            <button class="header__btn btn__chat brg__btn--feedback" type="button"></button>
-          </li>
-          <li>
-            <button class="header__btn btn__profile" type="button"></button>
-          </li>
-        </ul>
-      </nav>
-        <address class="contacts">
-            <a href="#" class="contacts--email">
-                mail@cps.com
-            </a>
-            <a href="#" class="contacts--phone">
-                8 800 890 89 00
-            </a>
-        </address>
-        <ul class="languages__list">
-            <li class="languages__item">
-                <button class="languages__button">RU</button>
-            </li>
-            <li class="languages__item">
-                <button class="languages__button">EN</button>
-            </li>
-            <li class="languages__item">
-                <button class="languages__button">CH</button>
-            </li>
-        </ul>
-    </footer>
-  </aside>
+  </header>
+
   <main class="main">            
     <h1 class="main__title">Услуги и сервисы</h1>
       <section class="main__nav">
@@ -144,11 +76,11 @@
                 очередь, советуют нас родным и близким.
                 <br>
                 <br>
-                Мы сотрудничаем с торговыми сетями, корпоративными клиентами,
-                государственными организациями и частными лицами. Услугами CPS
-                пользуются в России, странах СНГ и на международном рынке.
-                Обслуживаем технику Lenovo, Maibenben, ASUS, Motorola, Redmond,
-                Kitfort, Philips, AOC, Kodak и др.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                 A accusamus adipisci ducimus eum facere fugit harum molestias, 
+                 odit quaerat, ratione recusandae veniam voluptatum! Animi culpa
+                  eos iste pariatur quaerat, quo recusandae. A aperiam, architecto 
+                  asperiores atque dolore esse harum nam repellat sunt vel!
               </p>
               <button class="text__button">
                   <span class="text__button--info">Читать далее</span>
@@ -424,13 +356,89 @@
       <br>
       Разработано командой Apesong
     </p>
-    <a class="footer__text" href="#">Политика конфиденциальности</a>
+    <p class="footer__text">
+      Политика конфиденциальности
+    </p>
     <p class="footer__text">
       Информация, размещенная на данной странице, не является публичной
       офертой
     </p>
   </div>
 </footer>
+</div>
+<aside class="brg brg__menu--hidden">
+  <div class="brg__menu">
+    <div class="brg__menu--header">         
+        <button href="#" class="brg__btn btn__close"></button>                
+        <a href="#" class="brg__logo">
+          <img class="brg__logo--image" src="img/Group.svg" alt="CPS Logo" width="97" height="50">
+        </a>
+        <button href="#" class="brg__btn btn__search"></button>
+      </div>
+    <nav class="brg__menu--nav">
+            <ul class="brg__menu--items">
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Ремонт техники</a>
+                </li>
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Услуги и сервисы</a>
+                </li>
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Корпаративным клиентам</a>
+                </li>
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Продавцам техники</a>
+                </li>
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Партнерам</a>
+                </li>
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Производителям</a>
+                </li>
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Наши сервисные центры</a>
+                </li>
+                <li class="brg__menu--item">
+                    <a href="#" class="brg__menu--link">Контакты</a>
+                </li>
+            </ul>
+    </nav>
+    <footer class="brg__menu--footer">
+      <nav class="footer__nav menu__nav">
+        <ul class="menu__items">
+          <li>
+            <button class="header__btn btn__call brg__btn--call" type="button"></button>
+          </li>
+          <li>
+            <button class="header__btn btn__chat brg__btn--feedback" type="button"></button>
+          </li>
+          <li>
+            <button class="header__btn btn__profile" type="button"></button>
+          </li>
+        </ul>
+      </nav>
+        <address class="contacts">
+            <a href="#" class="contacts--email">
+                mail@cps.com
+            </a>
+            <a href="#" class="contacts--phone">
+                8 800 890 8900
+            </a>
+        </address>
+        <ul class="languages__list">
+            <li class="languages__item">
+                <button class="languages__button">RU</button>
+            </li>
+            <li class="languages__item">
+                <button class="languages__button">EN</button>
+            </li>
+            <li class="languages__item">
+                <button class="languages__button">CH</button>
+            </li>
+        </ul>
+    </footer>
+  </div>
+</aside>
 <div class="call__modal call__modal--hide">
   <button class="btn__close--call"></button>
   <h2 class="call__header">Заказать звонок</h2>
@@ -467,6 +475,7 @@
       <a href="#" class="modal__information--link">нашей политикой конфиденциальности</a></p>
     <button class="feedback__button" type="submit">отправить</button>
   </form>
+</div>
 </div>
 <script src="https://unpkg.com/swiper@11.2.5/swiper-bundle.min.js"></script>        
 <script type="text/javascript" src="./js/bundle.js"></script></body>
